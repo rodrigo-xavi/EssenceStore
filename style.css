@@ -1,0 +1,226 @@
+body{
+    font-family: Nunito,sans-serif;
+    color:#1c1c1c;
+}
+h1,h2,h3{
+    font-family: Asap,sans-serif;
+    color:#000000;
+}
+.botao{
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #faf600;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/*navegação*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #faf600;
+
+}
+nav > a{
+    text-decoration: none;
+    color:#000000;
+    font-weight:800;
+    font-size: 32px;
+    font-family:Yellowtail, serif ;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100% ;
+}
+nav ul li {
+    text-align: center;
+    width: 100%;
+
+
+}
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+}
+
+/*cabeçalho*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../Fotos/loja4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px ;
+
+}
+header h1{
+    color: #fcf700;
+}
+header p{
+    margin: bottom 2em; 
+    color:#fcf700;
+}
+
+#Sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #faf600;
+    color: #1c1c1c;
+}
+#Sobre h2{
+    color:#000000;
+}
+#Sobre p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+
+
+}
+#Sobre .botao{
+    background-color: #000000;
+    color: #faf600;
+}
+#Produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    
+}
+#Produtos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+
+}
+#Produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+#Produtos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+#Produtos h2{
+    margin-top: 20px;
+
+}
+#Produtos img{
+    
+    display: flex;
+    width: 25%;
+    height: 25%;
+}
+#Contato img{
+    width: 20%;
+   
+}
+#Contato{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    padding: 3px;
+    background-color:#FFFFFF;
+
+    
+}
+#contato h2{
+    color: #000000;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #faf600;
+    color: #000000;
+
+}
+footer a{
+    text-decoration: #fdfbfb;
+    color: #faf600;
+    background-color: #000000;
+}
+@media screen and (min-width: 768px){
+    /*nav*/
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: row;
+        width: 70% ;
+    }
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content:center ;
+
+    }
+    #Sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    #Produtos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      /* max-width: 1000px;*/
+        margin-top:0 auto ;
+        
+    }
+    #Produtos h2{
+    text-align: center;
+    width: 100%;
+   
+
+    }
+    #Produtos div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+       
+    }
+    #Contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 50%;
+       margin: 0 auto;
+
+    }
+    #Contato h2, #Contato p{
+        width: 100%;
+    }
+    
+}
+
+    
